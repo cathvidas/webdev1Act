@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Catherine Vidas</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+        body {
+			background-image: url('Images/background.jpg'); 
+			background-repeat: no-repeat; 
+			background-position: cover; 
+			background-size: 100%;	
+			background-attachment: fixed;
+		}
+
+
+/* Nav Bar */
+		nav {
+			background-color: #31240d;
+			display: flex;
+			align-items: center;
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+			top: 0;
+		}
+		
+		nav ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		nav ul li {
+			display: inline-block;
+			margin: 5px;
+			padding: 5px 1px;
+			font-size: 25px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: #DEB887;
+			padding: 0 20px;
+		}
+        
+		a#me {
+			color: #31240d;
+			background-color: #DEB887;
+			border-radius: 20px;
+		}
+
+		nav ul li:hover a#home {
+			background-color: #DEB887;
+			border-radius: 20px;;
+		}
+
+		nav ul li a#home:hover {
+			color: #31240d;
+		}
+
+		
+		.right-nav {
+			font-size: 20px;
+			padding: 5px 20px;
+			margin-left: 50px;
+			position: absolute;
+			right: 10px;
+		}
+		a#sign-up {
+			text-decoration: none;
+			color: #DEB887;
+		}
+		
+		a#sign-up:hover {
+			text-decoration: underline;
+		}
+/* Contents */
+        .whole_container {
+			width: 60%;
+			position: relative;
+			position: relative;
+			top: 100px;
+        }
+
+		.container {
+			width: 90%;
+			border:2px solid #31240d;
+			padding: 10px;
+			margin-top: 50px;
+			background-color: #DEB887;
+		}
+
+		h2 {
+			background-color: #8B4513;
+			border-radius: 0 20px;
+			padding: 5px 10px;
+			font-size: 40px;
+			color: #FFE4C4;
+			margin-top: -50px;
+		}
+		
+		.con {
+			display: inline-block;
+			padding: 20px 50px;
+			margin-top: 10px 20px;
+		}
+
+		.con2 {
+			display: inline-block;
+			padding: 20px 50px;
+		
+		}
+
+		h3 {
+			background-color: #8b5d20;
+			text-align: center;
+			font-size: 25px;
+			margin-bottom: 20px;
+			border-radius: 20px;
+		}
+		.con ul li, .con2 ul li {
+			font-size: 20px;
+			text-align: left;
+		}
+		</style>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+	 <nav>
+		<ul>
+			<li>
+				<a id="home" href="Home_page.html" >HOME</a>
+			</li>
+			<li>
+				<a id="me" href="AboutMe_page.html" >ABOUT ME</a>
+			</li>
+		</ul>
+
+		<div class="right-nav">
+			<a id="sign-up" href="../index.html" >sign up</a>
+		</div>
+	</nav>
+    <!-- end -->
+<center>
+    <div class="whole_container">
+
+        <div class="container">
+			<h2>Hobbies and Interests</h2>
+
+			<div class="hob_in">
+				<div class="con">
+					<h3>Hobbies</h3>
+					<ul>
+						<li>Listening to Music</li>
+						<li>writing</li>
+						<li>Using Gadgest</li>
+						<li>Cleaning our House</li>
+						<li>Taking Down Notes</li>
+					</ul>
+				</div>
+
+				<div class="con">
+					<h3>Interests</h3>
+					<ul>
+						<li>Playing Badminton</li>
+						<li>Reading Fiction Books</li>
+						<li>Travelling</li>
+						<li>Learning New Knowledge</li>
+						<li>Mathematics</li>
+					</ul>
+				</div>
+			</div>
+
+        </div>
+
+
+        <div class="container">
+			<h2>Dislikes</h2>
+			<div class="con">
+				<br>
+					<ul>
+						<li>Gossiping Others</li>
+						<li>Public Speaking</li>
+						<li>Talking to Strangers</li>
+						<li>Drinking Softdrinks</li>
+						<li>English Class</li>
+						<li>Crowded Places</li>
+						<li>Bullying</li>
+						<li>Noisy Places</li>
+					</ul>
+			</div>
+        </div>
+
+    </div>
+</center>
+</body>
+</html>

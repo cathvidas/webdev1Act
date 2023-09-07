@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('Navbar and Lists/Images/background.jpg'); 
+			background-repeat: no-repeat; 
+			background-position: cover; 
+			background-size: 100%;	
+			background-attachment: fixed;
+            padding: 100px 0;
+        }
+
+        .form {
+            background-image: url('Images/background-form.jpg');
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid #31240d;
+            width: 50%;
+            padding: 20px;
+            display: block;
+            box-shadow: #8B4513;
+            border-radius: 20px;
+            box-shadow: 10px 10px rgba(15, 13, 13, 0.473);
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #31240d;
+            color: #DEB887;
+            padding: 10px;
+            border-radius: 20px 0;
+            margin-top: -50px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            background-color: #FFE4C4;
+            color: #8B4513;
+            padding: 5px;
+            border-radius: 20px;
+            font-size: 22px;
+        }
+
+        .child {
+            display: block;
+            display: flex;
+            justify-content: center;
+        }
+        form {
+           text-align: left;
+           padding: 20px;
+           width: 50%;
+        }
+
+        label {
+            font-size: larger;
+            font-weight: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        input {
+            border-radius: 20px;
+            height: 25px;
+            width: 80%;
+            border: 2px solid black;
+            padding: 1px 10px;
+            background-color: #FFE4C4;
+            color: #31240d;
+            font-weight: bold;
+        }
+
+        input:hover {
+            background-color: #31240d;
+            color: #FFE4C4;
+            border-color: #8B4513;
+        }
+
+        button.log-in {
+            background-color: #8B4513;
+            color: #FFE4C4;
+            padding: 5px 10px;
+            border: 1px solid #FFE4C4;
+            border-radius: 20px;
+        }
+
+        button.log-in:hover {
+            background-color: #FFE4C4;
+            color: #8B4513 ;
+            border: 1px solid black;
+        }
+
+        
+        button.reset {
+            color: black;
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+
+        button.reset:hover {
+            border: 1px solid #8B4513;;
+            color: #8B4513;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+<div class="form">
+    
+<h1> Registration Form</h1>
+    <h2>Please Provide the Needed Information.</h2>
+    <br>
+    <div class="child">
+        <form action="Navbar and Lists\Home_page.html" method="Post">
+            <div>
+                <label for="username">Username:</label>
+                <br>
+                <input id="username" name="username" type="text" placeholder="username" required>
+            </div>
+            <br/>
+        
+            <div>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" placeholder="example@email.com" required>
+            </div>
+            <br/>
+
+            <div>
+                <label for="bdate">Birthdate</label>
+                <br>
+                <input type="date" name="bdate" id="bdate" required>
+            </div>
+            <br/>
+
+            <div>
+                <label for="username">Address:</label>
+                <br>
+                <input id="username" name="username" type="text" placeholder="address" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="password">Password:</label>
+                <br>
+                <input id="password" name="password" type="password" placeholder="password" required>
+            </div>
+            <br/>
+
+            <button class="reset" type="reset">Reset</button>
+            <button class="log-in" type="submit">Log-In</button>
+        </form>
+    </div>
+</div>
+</center>
+</body>
+</html>

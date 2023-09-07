@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Catherine Vidas</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			padding-bottom: 150px;
+			background-image: url('Images/background.jpg'); 
+			background-repeat: no-repeat; 
+			background-position: cover; 
+			background-size: 100%;	
+			background-attachment: fixed;
+		}
+
+		/* Nav Bar */
+		nav {
+			background-color: #31240d;
+			display: flex;
+			align-items: center;
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+			top: 0;
+		}
+		
+		nav ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		nav ul li {
+			display: inline-block;
+			margin: 5px;
+			padding: 5px 1px;
+			font-size: 25px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: #DEB887;
+			padding: 0 20px;
+		}
+        
+		a#home {
+			color: #31240d;
+			background-color: #DEB887;
+			border-radius: 20px;
+		}
+
+		nav ul li:hover a#me {
+			background-color: #DEB887;
+			border-radius: 20px;;
+		}
+
+		nav ul li a#me:hover {
+			color: #31240d;
+		}
+
+		
+		.right-nav {
+			font-size: 20px;
+			padding: 5px 20px;
+			margin-left: 50px;
+			position: absolute;
+			right: 10px;
+		}
+		a#sign-up {
+			text-decoration: none;
+			color: #DEB887;
+		}
+		
+		a#sign-up:hover {
+			text-decoration: underline;
+		}
+
+/* Myself */
+
+		.myself_container {
+			position: relative;
+			top: 100px;
+			right: 50px;
+			
+		}
+
+		.myself {
+			border: 2px solid #8B4513; 
+			background-color: #DEB887; 
+			width: 55%; 
+			border-radius: 20px; 
+			padding: 20px;
+		}
+
+		h1.id_self {
+			border-radius: 0 20px; 
+			margin-top: -50px; 
+			background-color: #8B4513; 
+			color: #FFE4C4; 
+			padding: 5px 10px;
+			margin-bottom: 25px;
+		}
+
+		.self {
+			border: 2px solid #8B4513; 
+			border-radius: 25px; 
+			background-color: #FFE4C4; 
+			display: flex; 
+			align-items: center; 
+			justify-content: left; 
+			padding: 10px 40px;
+		}
+
+		.self_img {
+			border-radius: 50%; 
+			border: 2px solid #62021e;
+		}
+
+		h1.my_name {
+			margin-left: 30px; 
+			color: #62021e;
+		}
+		
+/* Groupmates*/
+
+		.group_container {
+			border: 2px solid #8B4513; 
+			width: 50%; 
+			padding: 30px 20px; 
+			background-color: #DEB887; 
+			border-radius: 20px;
+			margin-top: 200px;
+		}
+
+		h2 {
+			background-color: #8B4513; 
+			color: #FFE4C4; 
+			margin-top: -70px; 
+			font-size: 40px; 
+			padding: 10px; 
+			border-radius: 20px 0 ;
+		}
+
+		.groupmates {
+			margin-top: 20px; display: flex; 
+			align-items: center; 
+			background-color: #FFE4C4; 
+			padding: 10px 50px; 
+			border: 2px solid #8B4513; 
+			border-radius: 70px;
+		}
+
+		.group_img {
+			border: 2px double #62021e; 
+			border-radius: 50%;
+		}
+
+		p {
+			margin-left: 30px; 
+			font-size: 25px; 
+		}
+		
+		a.self_intro {
+			text-decoration: none;
+			color: #62021e;
+		}
+
+		a.self_intro:hover {
+			color: #31240d;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+	<nav>
+		<ul>
+			<li>
+				<a id="home" href="Home_page.html" >HOME</a>
+			</li>
+			<li>
+				<a id="me" href="AboutMe_page.html" >ABOUT ME</a>
+			</li>
+		</ul>
+		
+		<div class="right-nav">
+			<a id="sign-up" href="../index.html" >sign up</a>
+		</div>
+	</nav>
+
+
+<!-- Myself -->
+	<div align="right" class="myself_container">
+    	<div class="myself">
+			<h1 align="center" class="id_self">ID: 22104609</h1>
+	  		<div class="self">
+				<img src="Images\Vidas.jpg" alt="Cath" width="150px" height="150px" class="self_img"> 
+				<h1 align="left" class="my_name"><a class="self_intro" href="1st_assignment\Vidas, Catherine.html" >Catherine Ambrad Vidas</a></h1>			
+			</div>
+		</div>
+	</div>
+
+	
+<!-- Groupmates -->
+<center>
+ <div class="group_container">
+		<h2 align="center">GROUPMATES:</h2>
+
+		 <div class="groupmates"> 
+			<img src="Images\Arias.jpg" alt="Arias" width="100px" height="100px" class="group_img">
+			<p align="left"><b><a class="self_intro" href="1st_assignment\Arias, Divine Love.html" >Divine Love Y. Arias</a></b></p>
+		</div>
+
+
+		 <div class="groupmates"> 
+			<img src="Images\Delostrico.jpg" alt="Delostrico" width="100px" height="100px" class="group_img">
+			<p align="left"><b><a class="self_intro" href="1st_assignment\Delostrico, Christine.html" >Christine A. Delostrico</b></p>
+		</div>
+
+
+		<div class="groupmates"> 
+			<img src="Images\Elguerra.jpg" alt="Elguerra" width="100px" height="100px" class="group_img">
+			<p align="left"><b><a class="self_intro" href="1st_assignment\Elguerra, Chielo.html" >Chielo V. Elguerra</b></p>
+		</div>
+
+
+		 <div class="groupmates"> 
+			<img src="Images\Fernandez.jpg" alt="Fernandez" width="100px" height="100px" class="group_img">
+			<p align="left"><b><a class="self_intro" href="1st_assignment\Fernandez, Jackie Lou.html" >Jackie Lou D. Fernandez</b></p>
+		</div>
+</div> 
+</center>
+
+</body>
+</html>
